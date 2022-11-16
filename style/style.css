@@ -13,10 +13,6 @@
     box-sizing: border-box;
 }
 
-body {
-    padding-bottom: 500px;
-}
-
 /* Event form*/
 #event-description{
     background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)), url(../imagem/hrz-5.jpg);
@@ -96,7 +92,7 @@ body {
     border: none;
     padding: 12px;
     cursor: pointer;
-    opacity: .6;
+    
 }
 
 .btn:hover {
@@ -216,3 +212,195 @@ body {
     width: 50%;
 }
 
+.detail h3 {
+    margin-bottom: 1em;
+    font-size: 2em;
+    font-weight: 500;
+}
+
+#detail-1 h3 {
+    font-size: 3em;
+    font-weight: 700;
+    padding-top: 1em;
+    
+}
+
+.detail-description {
+    width: 100%;
+    padding-left: 2em;
+}
+
+.detail-description ul {
+    list-style-position: inside;
+
+}
+
+.detail-description ul li {
+    margin-bottom: 0.4em;
+}
+
+.detail-description ul li:last-child {
+    font-weight: bold;
+}
+
+/* Call to action Section */
+#cta {
+    height: 300px;
+    background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)), url(../imagem/hrz-1.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+}
+
+#cta h3 {
+    margin-bottom: 1.2em;
+    font-size: 2em;
+    font-weight: 500;
+}
+
+#cta .btn {
+    width: 30%;
+    margin: 0 auto;
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+/* Footer*/
+
+#footer {
+    text-align: center;
+    color: var(--secondary);
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#footer h3{
+    font-size: 1.8em;
+    margin-bottom: .5em;
+    margin-top: 1em;
+}
+
+#footer p:nth-child(2) {
+    margin-bottom: 1em;
+    font-size: 1.2em;
+}
+
+#fotter span{
+    font-weight: bold;
+}
+
+.logo {
+    width: 100px;
+    margin:2em auto;
+}
+
+/*mobile*/
+@media (max-width: 450px) {
+    /*Event form*/
+    #event-description {
+        flex-direction: column;
+        height: auto;
+    }
+    
+    #disclaimer {
+        padding: 2em;
+    }
+
+    #disclaimer h2{
+        margin-bottom: .5em;
+    }
+
+    #subscription-form{
+        max-width: 80%;
+        margin-bottom: 2em;
+    }
+
+    /* benecits section*/
+
+    .benefits {
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+        padding: 2em;
+    }
+
+    .benefit {
+        max-width: 100%;
+        margin-bottom: 2em;
+    }
+
+    /* event location*/
+    #location {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+        padding: 2em 0;
+    }
+    #address {
+        order: 2;
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    #address i {
+        margin: .3em 0;
+    }
+
+    #about-location {
+        order: 1;
+        max-width: 100%;
+    }
+
+    #about-location h3 {
+        margin-bottom: 0;
+    }
+
+    #about-location p {
+        display: none;
+    } 
+
+    /* eventt details container*/
+
+    .detail {
+        flex-direction: column;
+        margin-bottom: .5em;
+        gap: 0;
+    }
+
+    .detail img {
+        width: 100%;
+        margin: 2em 0;
+    }
+
+    .detail-1 img {
+        display: none;
+    }
+
+    .detail-description {
+        padding: 0 ;
+    }
+    #detail-3 img {
+        order: 2;
+    }
+
+    #detail-3 .detail-description {
+        order: 1;
+    }
+
+    /* call to action section*/
+
+    #cta .btn {
+        width: 80%;
+    }
+
+    #cta {
+        text-align: center;
+    }
+
+}
